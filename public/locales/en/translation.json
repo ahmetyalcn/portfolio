@@ -1,0 +1,28 @@
+{
+    "lang": "TÜRKÇE",
+    "theme":{
+        "darkMode": "DARK MODE",
+        "lightMode": "LIGHT MODE"
+    },
+    "title": "I am a Frontend Developer...",
+    "description": "...who likes to craft solid and scalable frontend products with great user experiences.",
+    "skills": "Skills",
+    "profile": {
+        "title":"Profile",
+        "basicTitle": "Basic Information",
+        "aboutMe": "About me",
+        "birthday": "Birthday",
+        "city": "City",
+        "educationTitle": "Education",
+        "education":"Dogus Unv., Information Security Tech.,2023",
+        "role": "Preferred Role"
+    },
+    "projects": {
+        "title":"Projects",
+        "viewSite": "View Site"
+    },
+    "footer":{
+        "footerTitle": "Send me a message!",
+        "footerText": "Got a question or proposal, or just want to say hello? Go ahead."
+    }
+}

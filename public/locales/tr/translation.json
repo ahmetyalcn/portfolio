@@ -1,0 +1,28 @@
+{
+    "lang": "ENGLISH",
+    "theme":{
+        "darkMode": "DARK MOD",
+        "lightMode": "LIGHT MOD"
+    },
+    "title": "Ben Frontend Geliştirici'yim...",
+    "description": "Harika kullanıcı deneyimleriyle sağlam ve ölçeklenebilir Frontend ürünleri oluşturmayı seven biriyim.",
+    "skills": "Yetenekler",
+    "profile": {
+        "title":"Profil",
+        "basicTitle": "Temel Bilgiler",
+        "aboutMe": "Hakkımda",
+        "birthday": "Doğum Tarihi",
+        "city": "İkamet Şehri",
+        "educationTitle": "Eğitim Durumu",
+        "education":"Doğuş Ünv., Bilişim Güvenliği Tek.,2023",
+        "role": "Tercih Edilen Rol"
+    },
+    "projects": {
+        "title":"Projelerim",
+        "viewSite": "Siteyi Görüntüle"
+    },
+    "footer":{
+        "footerTitle": "Bana mesaj gönder",
+        "footerText": "Bir sorun ya da teklifin mi var? Yoksa sadece merhaba mı demek istiyorsun? Hadi!"
+    }
+}
