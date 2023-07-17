@@ -20,7 +20,7 @@ const [projects ,setProjects] = useState([])
         if (localStorage.getItem("lightMode")) {
             return JSON.parse(localStorage.getItem("lightMode"));
         } else {
-            return false
+            return true
         }
 
     })
