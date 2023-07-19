@@ -6,6 +6,7 @@ import Skills from './sections/Skills';
 import Profile from './sections/Profile';
 import Projects from './sections/Projects';
 import Footer from './sections/Footer';
+import ScrollUp from './sections/components/ScrollUp';
 
 function App() {
   const {lightMode} = useContext(ThemeContext);
@@ -16,6 +17,7 @@ function App() {
       <Profile/>
       <Projects/>
       <Footer/>
+      <ScrollUp/>
     </div>
   );
 }
