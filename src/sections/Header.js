@@ -1,25 +1,54 @@
 import { useTranslation } from "react-i18next";
 import './components/i18n';
-import "../App.css"
 import DarkModeToggle from "./components/DarkModeToggle";
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/context";
 import Typed from "react-typed"
+import { toast } from 'react-toastify';
+
+
 import "./Header.css"
 const Header = () => {
   const { t, i18n } = useTranslation();
   const { lightMode } = useContext(ThemeContext)
-  const handeChangeLang = async lang => {
-    await i18n.changeLanguage(lang)
+ 
+
+  const handleChangeLang = async lang => {
+   const id = toast.loading(t("translating"), {
+      position: "top-right",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: lightMode?"light":"dark",
+      });
+    setTimeout(async () => {
+      try {
+        await i18n.changeLanguage(lang)
+      }
+      finally {
+        toast.update(id, { 
+          render: t("translated"), 
+          type: "success", 
+          isLoading: false,
+          autoClose: 500, 
+        });
+      }
+    }, 1e3)
+
+
+
   }
   return (
-    <div className={`${lightMode ? "lightHeader" : "darkHeader"} lg:h-[90vh]`}>
+    <header className={`${lightMode ? "lightHeader" : "darkHeader"} lg:h-[90vh]`}>
 
       <div className="flex flex-row items-start">
         <div className="w-[70%] flex justify-end  p-5">
-          <button onClick={() => handeChangeLang(i18n.language === "tr" ? "en" : "tr")}>
-            <span className="text-green dark:text-light-purple font-bold">{t("lang")}</span>
-            <span className="text-gray-light dark:text-gray-dark font-bold"> {i18n.language === "en" ? "'YE GEÇ" : ""}</span>
+          <button onClick={() => handleChangeLang(i18n.language === "tr" ? "en" : "tr")}>
+                  <span className="text-green dark:text-light-purple font-bold">{t("lang")}</span>
+                  <span className="text-gray-light dark:text-gray-dark font-bold"> {i18n.language === "en" ? "'YE GEÇ" : ""}</span>
           </button>
         </div>
         <div className="w-[30%]  p-5">
@@ -35,7 +64,7 @@ const Header = () => {
           <div className="">
             <h1 className="text-2xl lg:text-4xl font-bold text-green mt-5 lg:mb-10 ">{t("title").split("Frontend")[0]}
               <Typed
-                strings={[`Frontend Developer ${i18n.language==="tr" ? "'ım..." : "..."}`, `Backend Developer ${i18n.language==="tr" ? "'ım..." : "..."}`, `UI/UX Designer ${i18n.language==="tr" ? "'ım..." : "..."}`]}
+                strings={[`Frontend Developer ${i18n.language === "tr" ? "'ım..." : "..."}`, `Backend Developer ${i18n.language === "tr" ? "'ım..." : "..."}`, `UI/UX Designer ${i18n.language === "tr" ? "'ım..." : "..."}`]}
                 typeSpeed={60}
                 backSpeed={40}
                 loop
@@ -70,7 +99,7 @@ const Header = () => {
 
         </div>
       </div>
-    </div>
+    </header>
   )
 }
 

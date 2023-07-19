@@ -31,7 +31,7 @@ const Skills = () => {
         }
     ]
     return (
-        <div className="dark:bg-brown lg:h-[70vh] ">
+        <section className="dark:bg-brown lg:h-[70vh] ">
             <div className="mx-auto rounded-xl overflow-hidden lg:w-[70%] pt-6 flex flex-wrap w-[70%] ">
                 <div className="lg:w-[20%]">
 
@@ -56,7 +56,7 @@ const Skills = () => {
 
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Profile = () => {
     const { t } = useTranslation();
     return (
-        <div className="lg:h-[80vh] dark:bg-dark-purple bg-purple ">
+        <section className="lg:h-[80vh] dark:bg-dark-purple bg-purple ">
             <div className=" w-[70%] mx-auto pb-5">
                 <h4 className="text-5xl mx-auto pt-5 lg:pt-10 font-bold text-green dark:text-green">{t("profile.title")}</h4>
 
@@ -52,7 +52,7 @@ const Profile = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     )
 }
 
