@@ -17,6 +17,7 @@ export const Button = styled.div`
     justify-content: end;
     right: 1rem;
     align-items: end;
+    opacity: 0.5;
    bottom: 1rem;
    height: 20px;
    font-size: 3rem;
