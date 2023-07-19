@@ -1,35 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion"
-import { useEffect } from "react";
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/context";
+
 const Skills = () => {
     const { t } = useTranslation();
-
-    const skills = [
-        {
-            title: "JAVASCRIPT",
-            imageUrl: "./images/javascript.svg"
-        },
-        {
-            title: "NODEJS",
-            imageUrl: "./images/nodejs.svg"
-        },
-        {
-            title: "REACT",
-            imageUrl: "./images/react.svg"
-        },
-        {
-            title: "VSCODE",
-            imageUrl: "./images/vscode.svg"
-        },
-        {
-            title: "REDUX",
-            imageUrl: "./images/redux.svg"
-        },
-        {
-            title: "FIGMA",
-            imageUrl: "./images/figma.svg"
-        }
-    ]
+    const {skills} = useContext(ThemeContext)
     return (
         <section className="dark:bg-brown lg:h-[70vh] ">
             <div className="mx-auto rounded-xl overflow-hidden lg:w-[70%] pt-6 flex flex-wrap w-[70%] ">

@@ -6,11 +6,15 @@ export const ThemeContext = createContext();
 
 const ContextProvider = ({ children }) => {
 const [projects ,setProjects] = useState([])
+const [skills ,setSkills] = useState([])
 
     useEffect(()=>{
         axios
         .post("https://reqres.in/api/workintech", data)
-        .then(res=>setProjects(res.data))
+        .then(res=>{
+            setProjects(res.data.projects)
+            setSkills(res.data.skills)
+        })
         .catch(err=>console.log(err))
     },[])
 
@@ -33,7 +37,7 @@ const [projects ,setProjects] = useState([])
     }, [lightMode]);
 
     return (
-        <ThemeContext.Provider value={{ toggleChange, lightMode, projects }}>
+        <ThemeContext.Provider value={{ toggleChange, lightMode, projects,skills }}>
             {children}
         </ThemeContext.Provider>
     )

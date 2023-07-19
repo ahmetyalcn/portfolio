@@ -9,13 +9,13 @@ const Footer = () => {
                 <p className="text-xl mb-5 dark:text-white">{t("footer.footerText")}</p>
                 <p className="mb-5 underline text-purple text-xl dark:text-light-purple">ahmetnecdetyalcn@gmail.com</p>
                 <ul className="flex justify-center gap-5">
-                    <a href="#">
+                    <a href="https://twitter.com">
                         <li><img src="./images/twitter.svg" alt="" /></li>
                     </a>
-                    <a href="#">
+                    <a href="https://codepen.io/ahmetyalcn">
                         <li><img src="./images/codepen.svg" alt="" /></li>
                     </a>
-                    <a href="">
+                    <a href="mailto:ahmetnecdetyalcn@gmail.com">
                         <li><img src="./images/email.svg" alt="" /></li>
                     </a>
                     <a href="https://instagram.com/develoqer_">
