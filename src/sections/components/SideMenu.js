@@ -9,7 +9,7 @@ z-index: 1;
   height: 100vh;
   justify-content: center;
   position: fixed;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     width: 100%;
     justify-content: center;
     flex-direction: row;
@@ -25,14 +25,13 @@ const MenuButton = styled.span`
     writing-mode: vertical-rl;
     padding: 1rem 0.5rem;
     cursor: pointer;
-    color:#4731D3;
     &:hover {
     background-color: #fff;
   }
     font-weight:700;
   text-orientation: mixed;
   transform: rotate(-180deg);
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
      writing-mode: horizontal-tb;
      &:hover {
     background: none;
@@ -43,18 +42,18 @@ const MenuButton = styled.span`
 const SideMenu = () => {
     return (
         <Container>
-            <div className='bg-green flex md:flex-col rounded-lg border-solid border-purple border-2'>
-                <Link to="home" smooth={true} duration={500} className='p-2 border-solid border-purple border-r-2 md:border-none'>
+            <div className='bg-green dark:bg-dark-green text-purple dark:text-green flex md:flex-col rounded-lg border-solid border-purple dark:border-green border-2'>
+                <Link to="home" smooth={true} duration={500} className='p-2 border-solid border-purple dark:border-green border-r-2 md:border-none'>
                     <MenuButton>
                         Home
                     </MenuButton>
                 </Link>
-                <Link to="skills" smooth={true} duration={500} className='p-2 border-solid border-purple border-r-2 md:border-none'>
+                <Link to="skills" smooth={true} duration={500} className='p-2 border-solid border-purple dark:border-green  border-r-2 md:border-none'>
                     <MenuButton>
                         Skills
                     </MenuButton>
                 </Link>
-                <Link to="profile" smooth={true} duration={500} className='p-2 border-solid border-purple border-r-2 md:border-none'>
+                <Link to="profile" smooth={true} duration={500} className='p-2 border-solid border-purple dark:border-green  border-r-2 md:border-none'>
                     <MenuButton>
                         Profile
                     </MenuButton>
