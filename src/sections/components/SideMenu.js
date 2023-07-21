@@ -42,7 +42,7 @@ const SideMenu = () => {
     return (
         <Container>
             <div className=' bg-green dark:bg-dark-green text-purple dark:text-green flex md:flex-col rounded-lg border-solid border-purple dark:border-green border-2'>
-                <Link to="home" smooth={true} duration={500} className='md:hover:bg-white dark:hover:bg-dark-purple md:rounded-lg p-2 md:p-0  border-solid border-purple dark:border-green border-r-2 md:border-none'>
+                <Link to="home" smooth={true} duration={500} className='md:hover:bg-white md:dark:hover:bg-dark-purple md:rounded-lg p-2 md:p-0  border-solid border-purple dark:border-green border-r-2 md:border-none'>
                     <MenuButton>
                         Home
                     </MenuButton>

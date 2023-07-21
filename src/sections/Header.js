@@ -42,7 +42,7 @@ const Header = () => {
 
   }
   return (
-    <header className={`${lightMode ? "lightHeader" : "darkHeader"} h-[95vh] md:h-[70vh] lg:h-[90vh]`} name="home">
+    <header className={`${lightMode ? "lightHeader" : "darkHeader"} h-auto pb-10`} name="home">
 
       <div className="flex flex-row items-start">
         <div className="w-[70%] flex justify-end  p-5">
