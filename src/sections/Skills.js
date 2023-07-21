@@ -7,7 +7,7 @@ const Skills = () => {
     const { t } = useTranslation();
     const {skills} = useContext(ThemeContext)
     return (
-        <section className="dark:bg-brown lg:h-[70vh] ">
+        <section className="dark:bg-brown lg:h-[70vh] " name="skills">
             <div className="mx-auto rounded-xl overflow-hidden lg:w-[70%] pt-6 flex flex-wrap w-[70%] ">
                 <div className="lg:w-[20%]">
 

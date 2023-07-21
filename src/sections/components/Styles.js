@@ -12,13 +12,12 @@ export const Content = styled.div`
   
 export const Button = styled.div`
    position: fixed; 
-   width: 100%;
    display: flex;
     justify-content: end;
     right: 1rem;
     align-items: end;
     opacity: 0.5;
-   bottom: 1rem;
+   bottom: 5rem;
    height: 20px;
    font-size: 3rem;
    z-index: 1;

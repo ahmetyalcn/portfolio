@@ -7,7 +7,7 @@ const Projects = () => {
     const { projects } = useContext(ThemeContext);
 
     return (
-        <section className=" dark:bg-dark-green bg-green ">
+        <section className=" dark:bg-dark-green bg-green " name="projects">
             <div className=" w-[70%] mx-auto pb-10">
                 <h4 className="text-5xl mx-auto pt-5 pb-5 lg:pb-10 lg:pt-10 font-bold text-purple dark:text-green">{t("projects.title")}</h4>
                 {projects.map(project => (

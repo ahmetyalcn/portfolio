@@ -9,18 +9,28 @@ import Footer from './sections/Footer';
 import ScrollUp from './sections/components/ScrollUp';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
+import SideMenu from './sections/components/SideMenu';
 
 function App() {
-  const {lightMode} = useContext(ThemeContext);
+  const { lightMode } = useContext(ThemeContext);
   return (
     <div className={lightMode ? "" : "dark"}>
-      <ToastContainer/>
-      <Header/>
-      <Skills/>
-      <Profile/>
-      <Projects/>
-      <Footer/>
-      <ScrollUp/>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Develoqer</title>
+        <link rel="canonical" href="https://develoqer.com" />
+       
+        <meta name="description" content="Helmet application" />
+      </Helmet>
+      <ToastContainer />
+      <SideMenu/>
+      <Header />
+      <Skills />
+      <Profile />
+      <Projects />
+      <Footer />
+      <ScrollUp />
     </div>
   );
 }

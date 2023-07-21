@@ -5,9 +5,9 @@ import { useContext } from "react";
 import { ThemeContext } from "../contexts/context";
 import Typed from "react-typed"
 import { toast } from 'react-toastify';
-
-
+import {motion} from "framer-motion"
 import "./Header.css"
+
 const Header = () => {
   const { t, i18n } = useTranslation();
   const { lightMode } = useContext(ThemeContext)
@@ -42,7 +42,7 @@ const Header = () => {
 
   }
   return (
-    <header className={`${lightMode ? "lightHeader" : "darkHeader"} h-[95vh] md:h-[70vh] lg:h-[90vh]`}>
+    <header className={`${lightMode ? "lightHeader" : "darkHeader"} h-[95vh] md:h-[70vh] lg:h-[90vh]`} name="home">
 
       <div className="flex flex-row items-start">
         <div className="w-[70%] flex justify-end  p-5">
@@ -59,7 +59,12 @@ const Header = () => {
       <h4 className="text-4xl mx-auto font-bold text-green w-[70%]">
         Ahmet
       </h4>
-      <div className="mx-auto  overflow-hidden md:w-[70%] w-[100%] lg:mt-6 flex justify-between">
+      <motion.div 
+       initial={{x: -300 }} 
+       whileInView={{ x: 0 }} 
+       viewport={{ once: false, amount: 0.1 }}
+       transition={{ duration: 0.5, type:"spring", bounce:0.5, ease: [0.17, 0.67, 0.83, 0.67]}} 
+      className="mx-auto  overflow-hidden md:w-[70%] w-[100%] lg:mt-6 flex justify-between">
         <div className="md:flex w-[73%] mx-auto md:mx-0 items-end">
           <div  >
         <div className="max-w-[70%] h-[12vh]">
@@ -74,9 +79,6 @@ const Header = () => {
               />  </h1> 
         </div>
               
-    
-           
-          
             <p className="text-white  text-xl lg:text-2xl mt-6 lg:mb-12 mb-5">{t("description")}</p>
             <ul className="flex gap-2 mb-5">
               <a href="https://github.com/ahmetyalcn">
@@ -104,7 +106,7 @@ const Header = () => {
           </div>
 
         </div>
-      </div>
+      </motion.div>
     </header>
   )
 }
