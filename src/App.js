@@ -21,7 +21,7 @@ function App() {
         <title>Develoqer</title>
         <link rel="canonical" href="https://develoqer.com" />
        
-        <meta name="description" content="Helmet application" />
+        <meta name="description" content="Ahmet Necdet Yalçın - Web Developer - Backend Developer - UI/UX Designer" />
       </Helmet>
       <ToastContainer />
       <SideMenu/>
