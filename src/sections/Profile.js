@@ -13,7 +13,7 @@ const Profile = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: false, amount: 0.1 }}
-                        transition={{ duration: 0.5, delay: 0.25 }}
+                        transition={{ duration: 0.25, delay:0.1 }} 
                         className="">
                         <h4 className="text-3xl mx-auto font-semibold text-white dark:text-white">{t("profile.basicTitle")}</h4>
                         <div className="flex mt-3">
@@ -33,7 +33,7 @@ const Profile = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: false, amount: 0.1 }}
-                        transition={{ duration: 0.5, delay: 0.25 }}
+                        transition={{ duration: 0.25, delay:0.1 }} 
                         className="">
                         <div className="md:w-[20vw] md:h-[20vw] md:flex mb-5">
                             <img className="rounded-xl object-cover w-full h-full" src="./images/logo.png" alt="Modern building architecture" />
@@ -43,7 +43,7 @@ const Profile = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: false, amount: 0.1 }}
-                        transition={{ duration: 0.5, delay: 0.25 }}>
+                        transition={{ duration: 0.25, delay:0.1 }} >
                         <h4 className="text-3xl mx-auto font-semibold text-white dark:text-white">{t("profile.aboutMe")}</h4>
                         <p className="text-white text-lg mt-5"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                             Reprehenderit beatae eius temporibus maxime vitae laudantium quae. <br />

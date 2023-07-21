@@ -20,7 +20,7 @@ const Skills = () => {
                             initial={{ opacity: 0, y: 50 }} 
                             whileInView={{ opacity: 1, y: 0 }} 
                             viewport={{ once: false, amount: 0.1 }}
-                            transition={{ duration: 0.5, delay:0.25 }} 
+                            transition={{ duration: 0.25, delay:0.1 }} 
 
                             key={index}
                             className="flex items-center justify-start lg:justify-end w-[50%] flex-wrap pb-5">

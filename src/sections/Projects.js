@@ -15,7 +15,7 @@ const Projects = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, amount: 0.1 }}
-                    transition={{ duration: 0.5, delay: 0.25 }}
+                    transition={{ duration: 0.25, delay:0.1 }} 
                     key={project.id} className="w-full mx-auto bg-white dark:bg-brown rounded-xl shadow-md overflow-hidden mt-5">
                         <div className="md:flex">
                             <div className="md:shrink-0 md:w-[30vw] md:h-[30vw]">

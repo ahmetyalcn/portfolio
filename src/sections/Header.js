@@ -42,7 +42,7 @@ const Header = () => {
 
   }
   return (
-    <header className={`${lightMode ? "lightHeader" : "darkHeader"} lg:h-[90vh]`}>
+    <header className={`${lightMode ? "lightHeader" : "darkHeader"} h-[95vh] md:h-[70vh] lg:h-[90vh]`}>
 
       <div className="flex flex-row items-start">
         <div className="w-[70%] flex justify-end  p-5">
@@ -61,16 +61,22 @@ const Header = () => {
       </h4>
       <div className="mx-auto  overflow-hidden md:w-[70%] w-[100%] lg:mt-6 flex justify-between">
         <div className="md:flex w-[73%] mx-auto md:mx-0 items-end">
-          <div className="">
-            <h1 className="text-2xl lg:text-4xl font-bold text-green mt-5 lg:mb-10 ">{t("title").split("Frontend")[0]}
-              <Typed
-                strings={[`Frontend Developer ${i18n.language === "tr" ? "'ım..." : "..."}`, `Backend Developer ${i18n.language === "tr" ? "'ım..." : "..."}`, `UI/UX Designer ${i18n.language === "tr" ? "'ım..." : "..."}`]}
+          <div  >
+        <div className="max-w-[70%] h-[12vh]">
+           <h1 className="text-2xl lg:text-4xl font-bold text-green mt-5 lg:mb-10 ">{t("title").split("Frontend")[0]}
+             <Typed
+                strings={[`Frontend Developer ${i18n.language === "tr" ? "'ım" : ""}`, `Backend Developer ${i18n.language === "tr" ? "'ım" : ""}`, `UI/UX Designer ${i18n.language === "tr" ? "'ım" : ""}`]}
                 typeSpeed={60}
                 backSpeed={40}
                 loop
+               
 
-              />
-            </h1>
+              />  </h1> 
+        </div>
+              
+    
+           
+          
             <p className="text-white  text-xl lg:text-2xl mt-6 lg:mb-12 mb-5">{t("description")}</p>
             <ul className="flex gap-2 mb-5">
               <a href="https://github.com/ahmetyalcn">
