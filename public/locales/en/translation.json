@@ -26,5 +26,11 @@
     "footer":{
         "footerTitle": "Send me a message!",
         "footerText": "Got a question or proposal, or just want to say hello? Go ahead."
+    },
+    "buttons":{
+        "home": "Home",
+        "skills": "Skills",
+        "profile": "Profile",
+        "projects": "Projects"
     }
 }

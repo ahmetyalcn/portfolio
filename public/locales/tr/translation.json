@@ -27,4 +27,11 @@
         "footerTitle": "Bana mesaj gönder",
         "footerText": "Bir sorun ya da teklifin mi var? Yoksa sadece merhaba mı demek istiyorsun? Hadi!"
     }
+    ,
+    "buttons":{
+        "home": "Ana sayfa",
+        "skills": "Yetenekler",
+        "profile": "Profil",
+        "projects": "Projeler"
+    }
 }

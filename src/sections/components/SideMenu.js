@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll';
-import { styled } from 'styled-components'
-
+import { styled } from 'styled-components';
+import { useTranslation } from "react-i18next";
 const Container = styled.div`
   z-index: 1;
   width: 3rem;
@@ -39,27 +39,28 @@ const MenuButton = styled.span`
   }
 `;
 const SideMenu = () => {
+    const {t} = useTranslation();
     return (
         <Container>
             <div className=' bg-green dark:bg-dark-green text-purple dark:text-green flex md:flex-col rounded-lg border-solid border-purple dark:border-green border-2'>
                 <Link to="home" smooth={true} duration={500} className='md:hover:bg-white md:dark:hover:bg-dark-purple md:rounded-lg p-2 md:p-0  border-solid border-purple dark:border-green border-r-2 md:border-none'>
                     <MenuButton>
-                        Home
+                        { t("buttons.home")}
                     </MenuButton>
                 </Link>
                 <Link to="skills" smooth={true} duration={500} className='md:hover:bg-white md:dark:hover:bg-dark-purple p-2 md:p-0 md:rounded-lg border-solid border-purple dark:border-green  border-r-2 md:border-none'>
                     <MenuButton>
-                        Skills
+                    { t("buttons.skills")}
                     </MenuButton>
                 </Link>
                 <Link to="profile" smooth={true} duration={500} className='md:hover:bg-white md:dark:hover:bg-dark-purple p-2 md:p-0 md:rounded-lg border-solid border-purple dark:border-green  border-r-2 md:border-none'>
                     <MenuButton>
-                        Profile
+                    { t("buttons.profile")}
                     </MenuButton>
                 </Link>
                 <Link to="projects" smooth={true} duration={500} className='md:hover:bg-white md:dark:hover:bg-dark-purple p-2 md:p-0 md:rounded-lg'>
                     <MenuButton>
-                        Projects
+                    { t("buttons.projects")}
                     </MenuButton>
                 </Link>
             </div>
